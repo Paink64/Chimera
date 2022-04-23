@@ -1,4 +1,22 @@
 {
+  "main": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-chimera-main-154905-authRole",
+      "UnauthRoleArn": "arn:aws:iam::574706551977:role/amplify-chimera-main-154905-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::574706551977:role/amplify-chimera-main-154905-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-chimera-main-154905-deployment",
+      "UnauthRoleName": "amplify-chimera-main-154905-unauthRole",
+      "StackName": "amplify-chimera-main-154905",
+      "StackId": "arn:aws:cloudformation:us-east-1:574706551977:stack/amplify-chimera-main-154905/e7c809f0-c31c-11ec-83de-0ae0c7cddfad",
+      "AmplifyAppId": "d2ap8z0pq8e7se"
+    },
+    "categories": {
+      "auth": {
+        "chimerae573758b": {}
+      }
+    }
+  },
   "dev": {
     "awscloudformation": {
       "AuthRoleName": "amplify-chimera-dev-213337-authRole",
