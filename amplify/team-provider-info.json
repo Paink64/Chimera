@@ -10,6 +10,11 @@
       "StackName": "amplify-chimera-dev-213337",
       "StackId": "arn:aws:cloudformation:us-west-1:402633735404:stack/amplify-chimera-dev-213337/8b81ff10-c2be-11ec-af69-024df04e6493",
       "AmplifyAppId": "dgtbw8mhvri6u"
+    },
+    "categories": {
+      "auth": {
+        "chimerae573758b": {}
+      }
     }
   }
 }
