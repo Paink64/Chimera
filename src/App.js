@@ -4,6 +4,7 @@ import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import MainPage from './components/MainPage';
+import Test from "./components/Test"
 
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 
@@ -17,6 +18,7 @@ function App() {
       
       
       <Route path="/" exact element={<MainPage/>}/>
+      <Route path="/Test" exact element={<Test/>}/>
       
       
     </Routes>
