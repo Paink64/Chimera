@@ -2,6 +2,7 @@ import React from 'react';
 
 import awsconfig from '../aws-exports';
 import Amplify from 'aws-amplify';
+import Lobby from './Lobby/Lobby';
 
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
@@ -14,7 +15,7 @@ function MainPage() {
       <header>
         <h1>We now have Auth!</h1>
       </header>
-      
+      <Lobby/>
       <AmplifySignOut />
     </div>
   );
