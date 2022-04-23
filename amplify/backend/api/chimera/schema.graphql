@@ -1,0 +1,38 @@
+type Presenter @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  Events: [Event] @hasMany(indexName: "byPresenter", fields: ["id"])
+}
+
+type Observer @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Name: String
+  untitledfield: AWSEmail
+  Events: [Event] @hasMany(indexName: "byObserver", fields: ["id"])
+}
+
+type Poll @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Answers: [Float]
+}
+
+type Event @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Description: String
+  Date: AWSDate
+  Time: AWSTime
+  studentID: ID! @index(name: "byObserver")
+  presenterID: ID! @index(name: "byPresenter")
+}
+
+type Author @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  Posts: [Post] @hasMany(indexName: "byAuthor", fields: ["id"])
+  Name: String
+}
+
+type Post @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  text: String
+  authorID: ID! @index(name: "byAuthor")
+}

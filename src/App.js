@@ -3,7 +3,7 @@ import './App.css';
 import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
-import MainPage from './components/MainPage';
+import Create from './components/Create/Create.js';
 import Test from "./components/Test"
 
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
@@ -17,7 +17,7 @@ function App() {
     <Routes>
       
       
-      <Route path="/" exact element={<MainPage/>}/>
+      <Route path="/" exact element={<Create/>}/>
       <Route path="/Test" exact element={<Test/>}/>
       
       
