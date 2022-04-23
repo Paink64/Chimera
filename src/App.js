@@ -6,6 +6,7 @@ import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import Create from './components/Create/Create.js';
 import Lobby from "./components/Lobby/Lobby";
 import Calendar from "./components/Calander/Calander";
+import Lobby from './components/Lobby/Lobby';
 
 import { BrowserRouter as Router, Route, Routes, Link} from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
       <Route path="/" exact element={<Create/>}/>
       <Route path="/Calendar" exact element={<Calendar/>}/>
       <Route path="/Lobby" exact element={<Lobby/>}/>
+      
       
     </Routes>
  </Router>
