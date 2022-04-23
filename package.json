@@ -12,6 +12,10 @@
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-scripts": "^5.0.1",
+<<<<<<< HEAD
+    "start": "^5.1.0",
+=======
+>>>>>>> de55ee13baf9939c5b0be7ac2d15f0376b86bff1
     "web-vitals": "^2.1.4"
   },
   "scripts": {
