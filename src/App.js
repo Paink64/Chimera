@@ -4,7 +4,7 @@ import Amplify from 'aws-amplify';
 import awsconfig from './aws-exports';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 import Create from './components/Create/Create.js';
-import Test from "./components/Test";
+import Lobby from "./components/Lobby/Lobby";
 import Calendar from "./components/Calander/Calander";
 import Lobby from './components/Lobby/Lobby';
 
