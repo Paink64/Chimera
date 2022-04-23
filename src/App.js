@@ -17,8 +17,8 @@ function App() {
    
     <Routes>
       
-      <Route path="/Calandar" exact element={<Calander/>}/>
       <Route path="/" exact element={<MainPage/>}/>
+      <Route path="/Calandar" exact element={<Calander/>}/>
       <Route path="/Test" exact element={<Test/>}/>
       
       
