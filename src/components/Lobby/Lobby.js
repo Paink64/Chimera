@@ -20,14 +20,22 @@ function Lobby() {
 
   return (
     <div className="Lobby">
-        <button onClick={()=>{
-            shareScreen()
-        }}>Share Screen</button>
-        <button>Stop Screen</button>
-
-        <header className="App-header">
-            <video width={800} height={800} ref={videoRef} autoPlay/>
+        <header className="Lobby-header">
+            <video className="video" width={800} ref={videoRef} autoPlay controls/>
         </header>
+        <body>
+            <button className="button" onClick={()=>{
+                shareScreen()
+            }}>Share Screen</button>
+            <button className="button" onClick={()=>{
+                let tracks=videoRef.current.srcObject.getTracks()
+                videoRef.current.srcObject=null
+                console.log(tracks)
+            }}>Stop Screen</button>
+        </body>
+        
+
+        
     </div>
   )
 }

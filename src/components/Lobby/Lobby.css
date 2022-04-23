@@ -1,5 +1,21 @@
+.video{
+    position: relative;
+    margin-top: 10px;
+    height: 100;
+}
+.button{
+    background-color: orange;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 20px;
+    position: relative;
+    bottom: 60px;
+    left: 290px;
+}
 .Lobby {
     text-align: center;
+    background-color: #282c34;
   }
   
   .Lobby-logo {
